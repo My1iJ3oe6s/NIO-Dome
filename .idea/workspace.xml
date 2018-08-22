@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="701d48a7-895e-4404-9b8e-3387ddc709d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NIO/NIO.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NIO/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NIO/src/main/java/joes/client/SocketClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NIO/src/main/java/joes/handler/ServerHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NIO/src/main/java/joes/server/Server.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/NIO-Dome-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-    </list>
+    <list default="true" id="701d48a7-895e-4404-9b8e-3387ddc709d4" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/BIO/target/" />
@@ -958,12 +943,20 @@
       <option name="presentableId" value="Default" />
       <updated>1534850513022</updated>
       <workItem from="1534850518839" duration="10603000" />
-      <workItem from="1534920930535" duration="3616000" />
+      <workItem from="1534920930535" duration="3699000" />
     </task>
+    <task id="LOCAL-00001" summary="nio server">
+      <created>1534930712116</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1534930712116</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14219000" />
+    <option name="totallyTimeSpent" value="14302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1005,6 +998,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="nio server" />
+    <option name="LAST_COMMIT_MESSAGE" value="nio server" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
