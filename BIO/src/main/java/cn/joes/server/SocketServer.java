@@ -26,6 +26,7 @@ public class SocketServer {
         while(true){
             // 获取一个套接字（阻塞）
             final Socket socket = server.accept();
+            System.out.println("开始处理通信");
             new Thread(new ServerHandler(socket)).start();
         }
 

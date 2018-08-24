@@ -18,6 +18,17 @@ public class Server {
     private Selector selector;
 
     /**
+     * 启动服务端测试
+     *
+     * @throws IOException
+     */
+    public static void main(String[] args) throws IOException {
+        Server server = new Server();
+        server.initServer(8000);
+        server.listen();
+    }
+
+    /**
      * 获得一个ServerSocket通道，并对该通道做一些初始化的工作
      *
      * @param port
@@ -27,7 +38,7 @@ public class Server {
     public void initServer(int port) throws IOException {
         // 获得一个ServerSocket通道
         ServerSocketChannel serverChannel = ServerSocketChannel.open();
-        // 设置通道为非阻塞
+        // 设置通道为非阻塞(与select一起使用必须为非阻塞)
         serverChannel.configureBlocking(false);
         // 将该通道对应的ServerSocket绑定到port端口
         serverChannel.socket().bind(new InetSocketAddress(port));
@@ -55,7 +66,6 @@ public class Server {
                 SelectionKey key = (SelectionKey) ite.next();
                 // 删除已选的key,以防重复处理
                 ite.remove();
-
                 handler(key);
             }
         }
@@ -116,21 +126,11 @@ public class Server {
 
             //回写数据
             ByteBuffer outBuffer = ByteBuffer.wrap("好的".getBytes());
-            channel.write(outBuffer);// 将消息回送给客户端
+            // 将消息回送给客户端
+            channel.write(outBuffer);
         }else{
             System.out.println("客户端关闭");
             key.cancel();
         }
-    }
-
-    /**
-     * 启动服务端测试
-     *
-     * @throws IOException
-     */
-    public static void main(String[] args) throws IOException {
-        Server server = new Server();
-        server.initServer(8000);
-        server.listen();
     }
 }
