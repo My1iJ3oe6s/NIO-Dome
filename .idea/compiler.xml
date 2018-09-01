@@ -8,12 +8,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="BIO" />
         <module name="NIO" />
+        <module name="NIO-Api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="BIO" target="1.6" />
       <module name="NIO" target="1.6" />
+      <module name="NIO-Api" target="1.5" />
       <module name="NIO-Dome" target="1.5" />
+      <module name="NIOApi" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

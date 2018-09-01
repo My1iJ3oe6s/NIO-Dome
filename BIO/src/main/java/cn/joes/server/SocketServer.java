@@ -8,6 +8,8 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * 服务端
@@ -17,6 +19,7 @@ import java.util.Date;
  */
 public class SocketServer {
 
+    private static ExecutorService executeService = Executors.newCachedThreadPool();
 
     public static void main(String[] args) throws IOException {
         //创建socket服务,监听10101端口
@@ -28,6 +31,8 @@ public class SocketServer {
             final Socket socket = server.accept();
             System.out.println("开始处理通信");
             new Thread(new ServerHandler(socket)).start();
+            //伪异步实现
+            //executeService.submit(new ServerHandler(socket));
         }
 
     }

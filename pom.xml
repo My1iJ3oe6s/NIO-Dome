@@ -11,6 +11,9 @@
     <modules>
         <module>BIO</module>
         <module>NIO</module>
+        <module>NIOApi</module>
+        <module>NIOApi</module>
+        <module>NIO-Api</module>
     </modules>
 
 
