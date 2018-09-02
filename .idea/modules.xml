@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/NIO/NIO.iml" filepath="$PROJECT_DIR$/NIO/NIO.iml" />
       <module fileurl="file://$PROJECT_DIR$/NIO-Api/NIO-Api.iml" filepath="$PROJECT_DIR$/NIO-Api/NIO-Api.iml" />
       <module fileurl="file://$PROJECT_DIR$/NIO-Dome.iml" filepath="$PROJECT_DIR$/NIO-Dome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Reactor/Reactor.iml" filepath="$PROJECT_DIR$/Reactor/Reactor.iml" />
     </modules>
   </component>
 </project>

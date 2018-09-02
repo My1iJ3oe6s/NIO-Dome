@@ -14,6 +14,9 @@
         <module>NIOApi</module>
         <module>NIOApi</module>
         <module>NIO-Api</module>
+        <module>Reactor-Dome</module>
+        <module>Reactor-Dome1</module>
+        <module>Reactor</module>
     </modules>
 
 

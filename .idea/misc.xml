@@ -9,6 +9,8 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/NIOApi/pom.xml" />
+        <option value="$PROJECT_DIR$/Reactor-Dome/pom.xml" />
+        <option value="$PROJECT_DIR$/Reactor-Dome1/pom.xml" />
       </set>
     </option>
   </component>
