@@ -18,7 +18,7 @@
       <module name="NIO-Api" target="1.5" />
       <module name="NIO-Dome" target="1.5" />
       <module name="NIOApi" target="1.5" />
-      <module name="Reactor" target="1.5" />
+      <module name="Reactor" target="1.6" />
       <module name="Reactor-Dome" target="1.5" />
       <module name="Reactor-Dome1" target="1.5" />
     </bytecodeTargetLevel>

@@ -54,7 +54,7 @@ public class SocketClient {
         if (channel.connect(new InetSocketAddress(12345))) {
             channel.register(selector, SelectionKey.OP_READ);
             //发送消息
-            doWrite(channel, "百果園的水果好吃嗎 ？？");
+            doWrite(channel, "百果園的水果好吃嗎 ？？\r\n");
         } else {
             channel.register(selector, SelectionKey.OP_CONNECT);
         }
