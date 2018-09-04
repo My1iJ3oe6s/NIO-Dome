@@ -53,8 +53,7 @@ public class Acceptor implements Runnable {
                         + " 注册到 subReactor-" + next);
                 /**
                  *
-                 * 将接收的连接注册到从 Reactor 上
-                 * 发现无法直接注册，一直获取不到锁
+                 * 将接收的连接注册到从 Reactor 上发现无法直接注册，一直获取不到锁
                  * 这是由于 从 Reactor 目前正阻塞在 select() 方法上，此方法已经锁定了 publicKeys（已注册的key)，直接注册会造成死锁
                  * 如何解决呢，直接调用 wakeup，有可能还没有注册成功又阻塞了，并且这里的 主从 Reactor 使用的是同一个类？
                  * 可以使用信号量或者 CountDownLatch 让 从Reactor 从 select 返回后先阻塞，等注册完后在执行
